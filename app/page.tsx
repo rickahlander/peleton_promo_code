@@ -12,12 +12,11 @@ import { subtitle, title } from "@/components/primitives";
 
 import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { copyTextToClipboard } from "@/utils/copyToClipboard";
 import { siteConfig } from "@/config/site";
 
-const code = "VQMNQZ";
+const code = "FNRT8Y";
 
 export default function Home() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
