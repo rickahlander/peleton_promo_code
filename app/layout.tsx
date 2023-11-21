@@ -1,10 +1,11 @@
 import "@/styles/globals.css";
 
 import { Analytics } from "@vercel/analytics/react";
-import { Link } from "@nextui-org/link";
+import GoogleAnalytics from "@/utils/googleTracking";
 import { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
 import { Providers } from "./providers";
+import { Suspense } from "react";
 import clsx from "clsx";
 import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
@@ -41,6 +42,10 @@ export default function RootLayout({
         )}
       >
         <Analytics />
+        {/* GTM */}
+        <Suspense>
+          <GoogleAnalytics />
+        </Suspense>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
