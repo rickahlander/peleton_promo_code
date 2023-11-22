@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Peleton Promo Code",
-  description: "Peleton Promo Code. Save on Peleton. Discounts on Peleton.",
+  name: "Peloton Promo Code",
+  description: "Peloton Promo Code. Save on Peloton. Discounts on Peloton.",
   navItems: [
     {
       label: "Home",
@@ -63,7 +63,7 @@ export const siteConfig = {
     discord: "https://discord.gg/9b6yyZKmH4",
     docs: "https://nextui.org",
     github: "https://github.com/nextui-org/nextui",
-    peleton: "https://www.onepeloton.com",
+    peloton: "https://www.onepeloton.com",
     sponsor: "https://patreon.com/jrgarciadev",
     twitter: "https://twitter.com/getnextui",
   },

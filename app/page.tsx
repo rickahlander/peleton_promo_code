@@ -17,6 +17,7 @@ import { copyTextToClipboard } from "@/utils/copyToClipboard";
 import { siteConfig } from "@/config/site";
 
 const code = "FNRT8Y";
+const red = "#FF3347";
 
 export default function Home() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -30,12 +31,16 @@ export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-lg text-center justify-center">
-        <h1 className={title()}>Peleton&nbsp;</h1>
-        <h1 className={title({ color: "violet" })}>Promo Code&nbsp;</h1>
+        <h1 className={title()}>Peloton&nbsp;</h1>
+        <h1 className={title()} style={{ color: red }}>
+          Promo Code&nbsp;
+        </h1>
         <br />
         <h2 className={subtitle({ class: "mt-4" })}>
           Use code <strong>{code}</strong> at checkout to get{" "}
-          <span className={title({ color: "pink", size: "xs" })}>$100 off</span>{" "}
+          <span className={title({ size: "xs" })} style={{ color: red }}>
+            $100 off
+          </span>{" "}
           accessories when ordering a Peloton Bike, Bike+, Tread, or Row.*
         </h2>
       </div>
@@ -47,9 +52,9 @@ export default function Home() {
         <Link
           isExternal
           className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={siteConfig.links.peleton}
+          href={siteConfig.links.peloton}
         >
-          Visit Peleton
+          Visit Peloton
         </Link>
       </div>
 
@@ -64,9 +69,9 @@ export default function Home() {
                 radius: "sm",
                 variant: "faded",
               })}
-              href={siteConfig.links.peleton}
+              href={siteConfig.links.peloton}
             >
-              Visit Peleton
+              Visit Peloton
             </Link>
           </span>
         </Snippet>
@@ -86,7 +91,7 @@ export default function Home() {
                     style={{ textDecoration: "underline" }}
                     target="_blank"
                   >
-                    www.onepeleton.com
+                    www.onepeloton.com
                   </a>{" "}
                   to use code.
                 </p>
@@ -101,9 +106,9 @@ export default function Home() {
                     variant: "bordered",
                     radius: "full",
                   })}
-                  href={siteConfig.links.peleton}
+                  href={siteConfig.links.peloton}
                 >
-                  Visit Peleton
+                  Visit Peloton
                 </Link>
               </ModalFooter>
             </>
