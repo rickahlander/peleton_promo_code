@@ -63,7 +63,7 @@ export const siteConfig = {
     discord: "https://discord.gg/9b6yyZKmH4",
     docs: "https://nextui.org",
     github: "https://github.com/nextui-org/nextui",
-    peloton: "https://www.onepeloton.com",
+    peloton: "https://account.onepeloton.com/referral/cdfae91f428e4e67ba3e132d8f9f6935?cfuList=row%2Cbike%2B&guestPassCode=M2FlYzA5ZWM4ZDY1NDNlMGEwNWMzYTkzMjg1YWY0Nzd8MTcwNTU0ZTI2ZDk2NDc1ZWIyZDZjYmJkODQ0YjJlZDk=",
     sponsor: "https://patreon.com/jrgarciadev",
     twitter: "https://twitter.com/getnextui",
   },
